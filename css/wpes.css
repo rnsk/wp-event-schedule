@@ -1,0 +1,108 @@
+/*---- front calendar ----*/
+ul.wpes-tabs {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px #ddd solid;
+}
+
+ul.wpes-tabs li {
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 0;
+	position: relative;
+	bottom: -1px;
+	list-style-type: none;
+	border: 1px #ddd solid;
+	border-top: none;
+	background: none;
+}
+
+ul.wpes-tabs li.wpes-active-month {
+	border-bottom: 1px #fff solid;
+	font-weight: bold;
+}
+
+ul.wpes-tabs li a {
+    width: 80px;
+	color: #000;
+	display: block;
+	padding: 3px 0 5px;
+	text-decoration: none;
+	background: #fff;
+	border-top: 3px #ccc solid;
+	text-align: center;
+}
+
+ul.wpes-tabs li a:hover {
+	position: relative;
+	bottom: 2px;
+}
+
+ul.wpes-tabs:after { content: '.'; display: block; height: 0; line-height: 0; clear: both; visibility: hidden; }
+
+/*---- calendar ----*/
+table.wpes-calendar {
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background-color: #fff;
+}
+
+table.wpes-calendar th {
+    width: 14.3%;
+    text-align: center;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #fff;
+}
+
+table.wpes-calendar td {
+    padding: 3px;
+    height: 80px;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #fff;
+}
+
+.widget-area table.wpes-calendar th,
+.widget-area table.wpes-calendar td {
+    padding: 5px 3px;
+    height: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+}
+
+table.wpes-calendar .wpes-event-title {
+    font-size: 90%;
+}
+
+table.wpes-calendar caption { margin: 5px; font-weight: bold; }
+table.wpes-calendar .wpes-sun { color: #db7093; }
+table.wpes-calendar .wpes-sat { color: #6495ed; }
+table.wpes-calendar .wpes-today { background-color: #fcf8e3; font-weight: bold; }
+
+/*---- tooltip ----*/
+a.wpes-event-title-tooltip {
+    position: relative;
+    z-index: 20;
+}
+a.wpes-event-title-tooltip:hover { z-index: 30; }
+
+a.wpes-event-title-tooltip span { display: none; }
+a.wpes-event-title-tooltip:hover span {
+    display: block;
+    position: absolute;
+    top: 2em; left: 2em;
+    width: 20em;
+    border: 1px solid #ccc;
+    background-color: #666;
+    color: #eee;
+    text-align: left;
+    padding: 5px;
+}
