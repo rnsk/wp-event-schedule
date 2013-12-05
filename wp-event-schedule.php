@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/plugins/wp-event-schedule/
 Description: Create the event schedule.
 Author: MKT-SYSTEM
 Author URI: http://mkt-system.jp/
-Version: 0.9
+Version: 0.9.1
 License: GPL2
 License URI: license.txt
 Text Domain: wpes

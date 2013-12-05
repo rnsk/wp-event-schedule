@@ -3,7 +3,7 @@ Contributors: ryo-nosuke
 Tags: Event, Calendar, Schedule
 Requires at least: 3.5.1
 Tested up to: 3.6
-Stable tag: 0.9
+Stable tag: 0.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,13 +11,13 @@ Create the event schedule.
 
 == Description ==
 
-This plug-in can create an event calendar.
+This plug-in can create an event calendar.  
 Event will be saved as a custom post type.
 
-イベントカレンダーを作成するプラグインです。
+イベントカレンダーを作成するプラグインです。  
 イベントはカスタム投稿タイプを利用して作成されるので、テンプレートの作成が容易に行えます。
 
-配布している WordPress Plugin に関する情報を配信する Facebook ページを作成しました。
+配布している WordPress Plugin に関する情報を配信する Facebook ページを作成しました。  
 ぜひ『いいね！』を押してください。
 
 https://www.facebook.com/pages/WordPress-Plugins/563277537040790
@@ -38,6 +38,9 @@ https://www.facebook.com/pages/WordPress-Plugins/563277537040790
 
 
 == Changelog ==
+
+Ver 0.9.1  
+カレンダーのタブ表示およびリンクの不具合を修正
 
 
 == Upgrade notice ==

@@ -61,12 +61,14 @@ class Output
             $active = '';
             $link = get_permalink();
             for ($i = $current_month; $i < $max_month; $i++) {
-                if ($i == $month) $active = ' class="wpes-active-month"';
+                $tab_year = date('Y', strtotime(date('Y-m') . '+' . $i . ' Month'));
+                $tab_month = date('n', strtotime(date('Y-m') . '+' . $i . ' Month'));
+                if ($tab_month == $month) $active = ' class="wpes-active-month"';
                 $params = array(
-                    'cal_year' => $year,
-                    'cal_month' => $i
+                    'cal_year' => $tab_year,
+                    'cal_month' => $tab_month
                 );
-                $link_tags[] = '<li' . $active . '><a href="' . $this->http_build_url($link, $params) . '">' . $i . '月</a></li>';
+                $link_tags[] = '<li' . $active . '><a href="' . $this->http_build_url($link, $params) . '">' . $tab_month . '月</a></li>';
                 $active = '';
             }
             $link_tag = implode("\n", $link_tags);
