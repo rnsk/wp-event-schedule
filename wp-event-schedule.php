@@ -3,13 +3,13 @@
 Plugin Name: WP Event Schedule
 Plugin URI: http://wordpress.org/plugins/wp-event-schedule/
 Description: Create the event schedule.
-Author: MKT-SYSTEM
-Author URI: http://mkt-system.jp/
+Author: Yoshika (@rnsk)
+Author URI: http://rnsk.net/
 Version: 0.9.1
 License: GPL2
 License URI: license.txt
 Text Domain: wpes
-Domain Path: /lang
+Domain Path: /lang/
 */
 
 namespace WPES;
@@ -46,12 +46,10 @@ require_once dirname(__FILE__) . DS . WIDGET_DIR . DS . 'wpes-widget.php';
 /**
  * 行事予定を作成するプラグイン
  *
+ * @copyright  Copyright (c) Yoshika
+ * @author     Yoshika (@rnsk)
  * @package    EventSchedule
- * @version      0.9
- * @auther       MKT-SYSTEM
- * @license      GPL2
- * @copyright  2013 MKT-SYSTEM
- * @link           http://mkt-system.jp/oss/wp-event-schedule
+ * @license    GPL2
  */
 
 class EventSchedule
