@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/plugins/wp-event-schedule/
 Description: Create the event schedule.
 Author: Yoshika (@rnsk)
 Author URI: http://rnsk.net/
-Version: 0.9.1
+Version: 0.9.2
 License: GPL2
 License URI: license.txt
 Text Domain: wpes
