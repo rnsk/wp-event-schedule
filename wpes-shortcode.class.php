@@ -37,7 +37,7 @@ class Shortcode extends Output
             'post_type' => POST_TYPE,
             'year' => $get_year,
             'month' => $get_month,
-            'num' => 4,
+            'num' => 3,
             'format' => 'Y-m',
             'tooltip' => false
         ), $atts));
