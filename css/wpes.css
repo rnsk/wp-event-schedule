@@ -31,6 +31,7 @@ ul.wpes-tabs li a {
 	background: #fff;
 	border-top: 3px #ccc solid;
 	text-align: center;
+    box-shadow: none;
 }
 
 ul.wpes-tabs li a:hover {
