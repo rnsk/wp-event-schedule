@@ -5,7 +5,7 @@ class WpesTodayWidget extends WP_Widget
 {
 
     function WpesTodayWidget() {
-        parent::WP_Widget(false, $name = __('Today\'s event', 'wpes'));
+        parent::__construct(false, $name = __('Today\'s event', 'wpes'));
     }
 
     function widget($args, $instance) {
@@ -19,7 +19,7 @@ class WpesTodayWidget extends WP_Widget
 
         $params = array(
             'post_type' => $post_type,
-            'post_status' => 'publish',	
+            'post_status' => 'publish',
             'posts_per_page' => -1,
             'orderby' => 'meta_value',
             'order' => 'DESC',
@@ -93,7 +93,7 @@ class WpesTodayWidget extends WP_Widget
         <p>
             <label for="<?php echo $this->get_field_id('wpes_today_title'); ?>"><?php _e('Title', 'wpes'); ?>:</label>
             <input class="widefat" type="text" id="<?php echo $this->get_field_id('wpes_today_title'); ?>" name="<?php echo $this->get_field_name('wpes_today_title'); ?>" value="<?php echo $title; ?>" />
-        </p>	
+        </p>
         <p>
             <label for="<?php echo $this->get_field_id('wpes_today_category'); ?>"><?php _e('Select Categories', 'wpes'); ?>:</label>
             <select class="widefat" id="<?php echo $this->get_field_id('wpes_today_category'); ?>" name="<?php echo $this->get_field_name('wpes_today_category'); ?>">
@@ -111,7 +111,7 @@ class WpesTodayWidget extends WP_Widget
         <p>
             <label for="<?php echo $this->get_field_id('wpes_today_empty_text'); ?>"><?php _e('Empty Text', 'wpes'); ?>:</label>
             <input class="widefat" type="text" id="<?php echo $this->get_field_id('wpes_today_empty_text'); ?>" name="<?php echo $this->get_field_name('wpes_today_empty_text'); ?>" value="<?php echo $empty_text; ?>" />
-        </p>	
+        </p>
 <?php
     }
 

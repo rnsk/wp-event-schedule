@@ -5,7 +5,7 @@ class WpecCalendarWidget extends WP_Widget
 {
 
     function WpecCalendarWidget() {
-        parent::WP_Widget(false, $name = __('Event Calendar', 'wpes'));
+        parent::__construct(false, $name = __('Event Calendar', 'wpes'));
     }
 
     function widget($args, $instance) {
@@ -60,7 +60,7 @@ class WpecCalendarWidget extends WP_Widget
         <p>
             <label for="<?php echo $this->get_field_id('wpes_calendar_title'); ?>"><?php _e('Title', 'wpes'); ?>:</label>
             <input class="widefat" type="text" id="<?php echo $this->get_field_id('wpes_calendar_title'); ?>" name="<?php echo $this->get_field_name('wpes_calendar_title'); ?>" value="<?php echo $title; ?>" />
-        </p>	
+        </p>
         <p>
             <label for="<?php echo $this->get_field_id('wpes_calendar_category'); ?>"><?php _e('Select Categories', 'wpes'); ?>:</label>
             <select class="widefat" id="<?php echo $this->get_field_id('wpes_calendar_category'); ?>" name="<?php echo $this->get_field_name('wpes_calendar_category'); ?>">
