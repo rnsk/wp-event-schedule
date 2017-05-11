@@ -83,7 +83,7 @@ EOF;
 
         // 自動保存ルーチンかどうかのチェック
         if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
-            return $post_id; 
+            return $post_id;
         }
 
         // パーミッションのチェック
@@ -96,7 +96,7 @@ EOF;
 
         // 保存
         update_post_meta($post_id, 'event_start_date', $event_start_date);
-        update_post_meta($post_id, 'event_end_date', $event_end_date);        
+        update_post_meta($post_id, 'event_end_date', $event_end_date);
     }
 
 /**
