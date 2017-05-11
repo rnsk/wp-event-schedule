@@ -181,7 +181,7 @@ EOF;
         $next_month = strtotime('+1 month', $current_month);
         $params = array(
             'post_type' => POST_TYPE,
-            'post_status' => 'publish',	
+            'post_status' => 'publish',
             'posts_per_page' => -1,
             'orderby' => 'meta_value',
             'order' => 'DESC',
