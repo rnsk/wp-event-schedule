@@ -67,7 +67,7 @@ class PostType
             'capability_type' => 'post',
             'hierarchical' => false,
             'menu_position' => 5,
-            'menu_icon' => WP_PLUGIN_URL . DS . PLUGIN_DIR . DS . 'img' . DS . 'calendar.png',
+            'menu_icon' => 'dashicons-calendar-alt',
             'supports' => $setting['supports'],
             'has_archive' => true
         );
