@@ -56,13 +56,12 @@ class Output
 
         $html = '';
         if ((!empty($num)) && (is_numeric($num))) {
-            $current_month = date('n');
-            $max_month = $current_month + $num;
             $active = '';
             $link = get_permalink();
-            for ($i = $current_month; $i < $max_month; $i++) {
-                $tab_year = date('Y', strtotime(date('Y-m') . '+' . $i . ' Month'));
-                $tab_month = date('n', strtotime(date('Y-m') . '+' . $i . ' Month'));
+            for ($i = 0; $i < $num; $i++) {
+                $datestring = date('Y-m', strtotime('+' . $i . ' month'));
+                $tab_year = date('Y', strtotime($datestring));
+                $tab_month = date('n', strtotime($datestring));
                 if ($tab_month == $month) $active = ' class="wpes-active-month"';
                 $params = array(
                     'cal_year' => $tab_year,
